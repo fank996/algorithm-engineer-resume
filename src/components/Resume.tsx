@@ -98,15 +98,15 @@ const Resume: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="w-32 h-32 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center text-5xl font-bold border-4 border-white/30">
-              AI
+              FX
             </div>
             <div className="text-center md:text-left">
-              <h1 className="text-4xl font-bold mb-2">张三</h1>
+              <h1 className="text-4xl font-bold mb-2">FANG XIN</h1>
               <p className="text-xl text-blue-100 mb-4">高级算法工程师</p>
               <div className="flex flex-wrap gap-4 justify-center md:justify-start text-sm">
                 <div className="flex items-center gap-2">
                   <Mail size={16} />
-                  <span>zhangsan@example.com</span>
+                  <span>fangxin@example.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={16} />
@@ -118,7 +118,7 @@ const Resume: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <Github size={16} />
-                  <span>github.com/zhangsan</span>
+                  <span>github.com/fangxin</span>
                 </div>
               </div>
             </div>
