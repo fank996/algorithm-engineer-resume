@@ -146,6 +146,34 @@ const Resume: React.FC = () => {
           </CardContent>
         </Card>
 
+        {/* Education */}
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <GraduationCap className="text-blue-600" />
+              教育背景
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            {education.map((edu, index) => (
+              <div key={index}>
+                <div className="flex justify-between items-start mb-2">
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900">{edu.school}</h4>
+                    <p className="text-blue-600">{edu.degree}</p>
+                  </div>
+                  <p className="text-sm text-gray-500">{edu.period}</p>
+                </div>
+                <ul className="list-disc list-inside space-y-1 text-gray-700">
+                  {edu.details.map((detail, i) => (
+                    <li key={i}>{detail}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </CardContent>
+        </Card>
+
         {/* Skills */}
         <Card>
           <CardHeader>
@@ -241,34 +269,6 @@ const Resume: React.FC = () => {
                 <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
                   {project.achievements.map((achievement, i) => (
                     <li key={i}>{achievement}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </CardContent>
-        </Card>
-
-        {/* Education */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <GraduationCap className="text-blue-600" />
-              教育背景
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            {education.map((edu, index) => (
-              <div key={index}>
-                <div className="flex justify-between items-start mb-2">
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900">{edu.school}</h4>
-                    <p className="text-blue-600">{edu.degree}</p>
-                  </div>
-                  <p className="text-sm text-gray-500">{edu.period}</p>
-                </div>
-                <ul className="list-disc list-inside space-y-1 text-gray-700">
-                  {edu.details.map((detail, i) => (
-                    <li key={i}>{detail}</li>
                   ))}
                 </ul>
               </div>
